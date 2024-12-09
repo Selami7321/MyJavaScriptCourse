@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JAVASCRİPT OBJECT CREATİON </h1>>
+        <p>Displaying a javascript object will output [object object ]:</p>
+        <p id="demo" ></p>
+
+        <script>
+            // Create Object
+            const person={
+                name:"Johnny",
+                age:36,
+                city:"New York",
+
+            };
+            // Build Text
+            let text="";
+            for(let x in person){
+                text +=person[x]+"";
+            }
+            // create an Array
+            const myArray=Object.values(person);
+
+            //Display Object
+            //document.getElementById("demo").innerHTML=person.name  + "  " +person.age  + "  " +  person.city ;
+            document.getElementById("demo").innerHTML=myArray;
+            </script>
+    </body>>
+</html>

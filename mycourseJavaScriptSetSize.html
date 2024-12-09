@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Sets</h1>
+        <h2>Create a set from an array:</h2>
+
+        <p id="demo"></p>
+        <script>
+            //Create a Set
+            const letters=new Set(["f","b","i"]);
+
+            //Add values to the Set
+            letters.add("o");
+            letters.add("p");
+            letters.add("e");
+            letters.add("n");
+
+            //Does the Set contain "k"
+            answer =letters.has("o")
+
+            //List all Elements
+            let text="";
+            letters.forEach(function(value){
+                text +=value + "<br>";
+            })
+
+            
+            //Display set.size
+            document.getElementById("demo").innerHTML="The set has " + letters.size + " values";
+            document.getElementById("demo").innerHTML="The answer is " + answer;
+            document.getElementById("demo").innerHTML=text;
+
+            </script>
+    </body>
+</html>
+
+

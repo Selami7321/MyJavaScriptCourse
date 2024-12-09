@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Strings</h1>
+        <h2>The match() method</h2>
+        <p>Perform a search for "ain" :</p>
+        <p id="demo"></p>
+          //startsWith() String ifadenin belirttiğimiz ifade ile başlayip başlamadiğini kontrol edip true false değeri döndürür.
+           //endsWith() methodu Sting ifadenin yazdiğimiz ifadeyle bitip bitmediğini kontrol edip true yada false değer döndürür.
+        <script>
+            let text="The rain in ENGLAND stays mAinly in the plain ";
+            const myArr=text.match(/ain/gi);
+            document.getElementById("demo").innerHTML=text.includes("stays",4);
+            </script>
+    </body>
+</html> 
+        

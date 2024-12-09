@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript String</h1>
+        <h2>The padEnd() Method</h2>
+        <p>The padEnd() method pads a string at the end.</p>
+        <p>It pads the string with another string(multiple times) until it reaches a given lenght.</p>
+        <p id="demo"></p>
+        <script>
+            let text="hii";
+            text=text.padEnd(4,"0");
+            let rept=text.repeat(5)
+            let replc=text.replace("hii","Welcome the my workshop")
+            document.getElementById("demo").innerHTML=replc;
+            </script>
+    </body>
+</html>

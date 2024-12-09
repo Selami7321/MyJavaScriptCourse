@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Object Constructors </h1>
+        <p>This Method add to</p>
+        <p id="demo"></p>
+        <script>
+            //Consturoctor Function for Person Object
+            function Person(first,last,age,eye){
+                this.firstName=first;
+                this.lastName=last;
+                this.age=age;
+                this.eyeColor=eye;
+
+            }
+        // Create a 2 Persons
+        const myFather=new Person("Brad","Pitt",56,"blue");
+        const myMother=new Person("Anka","Kusu",52,"brown");
+
+        //Add a name method
+        myMother.changeName= function(name){
+            this.lastName=name;
+        }
+  //Change Name
+  myMother.changeName("Doe");
+
+  //Display FullName
+  document.getElementById("demo").innerHTML="My Mother's LastName is  " +  myMother.lastName;
+
+  </script>
+    </body>
+</html>

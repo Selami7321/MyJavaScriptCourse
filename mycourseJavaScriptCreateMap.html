@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Iterables</h1>
+        <h2>Iterate over a Map</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            // Create a Map
+            const fruits =new Map([
+                ["apple",390],
+                    ["banana",456],
+                    ["orange",78]
+                
+            ]);
+
+            //List all Entries
+            let text="";
+            for(const x of fruits ){
+                text += x +"<br>";
+
+            }
+            document.getElementById("demo").innerHTML=text;
+            </script>
+    </body>
+</html>
+ 
