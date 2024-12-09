@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScripts Set</h1>
+        <h2>The entries() Method</h2>
+
+        <p>The entries() method returns an Iterator with [value,value] pairs from a Set:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            //Create a Set
+            const letters= new Set(["a","b","c","d"]);
+
+            //Get all entries()
+            const Iterator=letters.entries();
+
+            //List all entries()
+            let text=""
+            for(const entry of Iterator){
+                text+= entry +"<br>";
+
+            }
+            document.getElementById("demo").innerHTML=text;
+            </script>
+    </body>
+</html>
