@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>JavaScript Arrays</h1>
+        <h2>The find() Method</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            const number=[12,34,56,78,65];
+            let findbigger=number.find(myFunction);
+         
+            document.getElementById("demo").innerHTML= "First number is bigger than 45 ,this is  " + findbigger;
+           
+             function myFunction(value,index,array){
+                return value>45;
+
+             }
+             </Script>
+    </body>
+</html>
