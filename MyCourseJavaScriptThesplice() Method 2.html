@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The splice() Method Two subject</h2>
+
+        <p>The splice() method adds new elements to an array, and returns an array with the deleted elements(if any):</p>
+
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+
+        <script>
+            const programmingLanguages=["Python","C","Java"];
+            document.getElementById("demo1").innerHTML="The original array:<br>" + programmingLanguages;
+            let removed=programmingLanguages.splice(1,1,"JavaScript","MYSQL");
+            document.getElementById("demo2").innerHTML="The new array:<br>" +programmingLanguages;
+            document.getElementById("demo3").innerHTML="The removed elements:" + removed;
+
+            </script>
+    </body>
+</html>
+
+        
