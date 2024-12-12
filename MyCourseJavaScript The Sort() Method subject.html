@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <h2>The sort() Method Subject</h2>
+        <button onclick="myFunction1()" > Sort Alphafetical </button>
+        <button onclick="myFunction2()"> Sort Nummerical</button>
+        <p id="demo"></p> 
+        <script>
+            const points=[45,32,67,89,100,90,66];
+            document.getElementById("demo").innerHTML=points;
+
+            function myFunction1(){
+                points.sort();
+                document.getElementById("demo").innerHTML=points;
+
+            }
+            
+            function myFunction2(){
+                points.sort(function(k,l) {return k-l});
+                document.getElementById("demo").innerHTML=points;
+            }
+            </script>
+    </body>
+</html>
